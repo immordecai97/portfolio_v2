@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// ---------------------------------------- COLORS ---------------------------------------->
+$primary: #efefee;
+$secondary: #fffffe;
+$tertiary: #242424;
+
+// ---------------------------------------- GENERAL THEME ---------------------------------------->
+body {
+	font-family: "Poppins", sans-serif;
+	@apply text-tertiary;
+}
+
+.btn {
+	@apply bg-secondary text-tertiary px-4 py-2 rounded-s-full rounded-e-full min-w-28;
+}
+
+.btn-dark {
+	@extend .btn;
+	@apply bg-tertiary text-secondary;
+}
+
+.outline-rounded {
+	@apply md:border md:text-tertiary md:rounded-s-full md:rounded-e-full md:p-0 md:pl-4
+}
+
+.h2 {
+	@apply font-bold text-3xl text-balance;
+}
+
+.h3 {
+	@apply font-bold text-2xl text-balance;
+}
+
+.h4 {
+	@apply font-bold text-xl text-balance;
+}
+
+p {
+	@apply text-pretty;
+}
+
+.rounded-bottom {
+	@apply rounded-b-[2rem]
+}
+
+.rounded-top {
+	@apply rounded-t-[2rem];
+}
+
+.rounded-axis-y {
+	@extend .rounded-top;
+	@extend .rounded-bottom;
+}
+
+.z-index-1000 {
+	@apply relative;
+	z-index: 1000;
+}
+.-z-index-1000 {
+	@apply relative;
+	z-index: -1000;
+}
+
+.z-index-900 {
+	@apply relative;
+	z-index: 900;
+}
+.-z-index-900 {
+	@apply relative;
+	z-index: -900;
+}
+
+.z-index-800 {
+	@apply relative;
+	z-index: 800;
+}
+.-z-index-800 {
+	@apply relative;
+	z-index: -800;
+}
+
+.z-index-700 {
+	@apply relative;
+	z-index: 700;
+}
+.-z-index-700 {
+	@apply relative;
+	z-index: -700;
+}
+
+.z-index-600 {
+	@apply relative;
+	z-index: 600;
+}
+.-z-index-600 {
+	@apply relative;
+	z-index: -600;
+}
+
+.z-index-500 {
+	@apply relative;
+	z-index: 500;
+}
+.-z-index-500 {
+	@apply relative;
+	z-index: -500;
+}
+
+.z-index-400 {
+	@apply relative;
+	z-index: 400;
+}
+.-z-index-400 {
+	@apply relative;
+	z-index: -400;
+}
+
+.z-index-300 {
+	@apply relative;
+	z-index: 300;
+}
+.-z-index-300 {
+	@apply relative;
+	z-index: -300;
+}
+
+.z-index-200 {
+	@apply relative;
+	z-index: 200;
+}
+.-z-index-200 {
+	@apply relative;
+	z-index: -200;
+}
+
+.z-index-100 {
+	@apply relative;
+	z-index: 100;
+}
+.-z-index-100 {
+	@apply relative;
+	z-index: -100;
+}
+
+.z-index-0 {
+	@apply relative;
+	z-index: 0;
+}
+
+// ---------------------------------------- NAVBAR COMPONENT ---------------------------------------->
+nav {
+	@extend .z-index-1000;
+	@apply w-full flex items-center justify-between p-4 bg-primary;
+	
+	&.scrolled {
+		@apply sticky top-0 left-0;
+		box-shadow: 0px -9px 12px 6px #000000a1;
+	}
+	
+	.btnClose,
+	.btnOpen {
+		@apply text-3xl;
+	}
+	
+	.menu-slide {
+		@apply w-full fixed top-14 left-0 bottom-0 flex flex-col items-center justify-center gap-8 bg-primary transition-transform duration-300 ease-in-out;
+		transform: translateX(-100%);
+		
+		&.open {
+			transform: translateY(0);
+		}
+		
+		.navlist {
+			@apply flex flex-col items-center justify-center gap-6;
+		}
+	}
+}
+
+// ---------------------------------------- CUSTOM CSS ---------------------------------------->
+.separator-text {
+	@apply my-8;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	span {
+		@apply -rotate-12 font-semibold
+	}
+}
+
+
+.separator-text::before,
+.separator-text::after{
+	content: "";
+	flex: 1;
+	height: 1px;
+	background-color: $tertiary;
+	opacity: .3;
+}
+
+.separator-text::before{
+	margin-right: .8em;
+}
+
+.separator-text::after{
+	margin-left: .8em;
+}

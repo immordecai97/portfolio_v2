@@ -32,7 +32,7 @@ export default function CertificateSwiper() {
 				{
 					certificates.map(({ url }, index) => (
 						<SwiperSlide key={index}>
-							<img src={`/src/assets/img/${url}`} />
+							<img src={`/src/assets/${url}`} />
 						</SwiperSlide>
 					))
 				}

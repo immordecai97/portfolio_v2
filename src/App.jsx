@@ -1,89 +1,121 @@
-import Navbar from "./components/navbar"
-import Footer from "./components/Footer"
+import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
+import { Section } from "@/components/Section";
+import { Avatar } from "@/components/Avatar";
+import { Separator } from "@/components/Separator";
 import { FaPlaystation } from "react-icons/fa";
-import CarlosMarquina from '@/assets/img/CarlosMarquina.jpg'
+import { TypeAnimation } from "react-type-animation";
+import { MiniTag, MiniTagWrapper } from "./components/MiniTags";
+import CarlosMarquina from "@/assets/img/CarlosMarquina.jpg";
+import { InfiniteSlider } from "@/components/InfinitySlider";
+import { Subtitle, TitleHeader } from "@/components/Titles";
+import { Button } from "./components/Button";
+import { MdLocationPin } from "react-icons/md";
+import { IoMdAnalytics } from "react-icons/io";
+import CertificateSwiper from "@/components/CertificateSwiper";
+import { Projects } from "./components/Projects";
+import { Skills, SkillsReverse } from "./components/Skills";
 
 function App() {
-	
+	const images = [CarlosMarquina, CarlosMarquina, CarlosMarquina, CarlosMarquina];
+
 	return (
 		<>
 			<Navbar />
-			<main>
-				<h1 className="sr-only">Portafolio de Carlos Marquina</h1>
-
-				<section className="bg-primary pt-10 pb-10 px-3 flex flex-col items-center justify-center gap-4 rounded-bottom z-index-100">
-
-					<figure className="w-24 h-24 rounded-full overflow-hidden">
-						<img src={CarlosMarquina} alt="Carlos Marquina" />
-					</figure>
-
-					<h2 className="h2">Carlos Marquina</h2>
-
-					<p className="text-xl text-center font-semibold">
-						Desarrollador web Full Stack
-					</p>
-					{/* <p className="text-xl text-center">
-						Mi objetivo es crecer profesionalmente, aprender enfrentando desafíos complejos y contribuir en proyectos innovadores
-					</p> */}
+			<main className="container mx-auto px-1 py-8 flex flex-col gap-8 md:py-12 md:px-4 md:gap-12">
+				<section className="sm:flex sm:items-center sm:mx-4">
+					<div className="sm:w-1/2">
+						<TitleHeader
+							title="Carlos Marquina"
+							subitle="Web developer" />
+						<Button text="Contact me" />
+					</div>
+					<div className="hidden sm:flex sm:w-1/2 justify-center items-center">
+						<Avatar src={CarlosMarquina} alt="Carlos Marquina" />
+					</div>
 				</section>
 
-				<section className="bg-secondary min-h-40 rounded-bottom z-index-0 pt-8 -mt-8 flex flex-col items-center justify-center px-3">
-						<ul className="flex-1 w-full flex items-center justify-around md:justify-center md:gap-10">
-							<li className="font-bold text-xl">Udemy</li>
-							<li className="font-bold text-xl">Platzi</li>
-							<li className="font-bold text-xl">Da Vinci</li>
-						</ul>
-				</section>
-
-				<section className="bg-primary min-h-64 -z-index-100 py-8 -mt-8 flex flex-col items-center justify-center px-3">
-						<div className="flex-1 py-4">
-							<p className="text-xl text-center font-semibold">
-								Collaborate with brands and agencies to create impactful digital products
-							</p>
-							<div className="separator-text">
-								<span>Services</span>
+				<section>
+					<Subtitle>Education</Subtitle>
+					<ul className="flex flex-col space-y-4">
+						<li className="p-3 border border-neutral-300 rounded sm:flex sm:justify-between">
+							<div className="flex flex-col max-w-sm sm:col-span-2">
+								<div className="flex flex-wrap items-center gap-x-4">
+									<h3 className="font-semibold uppercase">Web Development</h3>
+									{/* <ul className="flex gap-2">
+										<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Remoto</li>
+										<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Optional</li>
+									</ul> */}
+								</div>
+								<p>
+									Web design and development career
+								</p>
+								<ul className="flex gap-2">
+									<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Argentina</li>
+									<time className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center sm:hidden">2022 - 2025</time>
+								</ul>
 							</div>
-							<ul className="flex flex-col items-center justify-around gap-6">
-								<li className="flex flex-col gap-2 border border-black border-opacity-20 p-4 rounded-lg">
-									<div><FaPlaystation className="text-3xl" /></div>
-									<p className="font-semibold">Web Development</p>
-									<p className="text-sm">
-										Building fast, responsive and accessible websites and web applications
-									</p>
-								</li>
-								<li className="flex flex-col gap-2 border border-black border-opacity-20 p-4 rounded-lg">
-									<div><FaPlaystation className="text-3xl" /></div>
-									<p className="font-semibold">Web Development</p>
-									<p className="text-sm">
-										Building fast, responsive and accessible websites and web applications
-									</p>
-								</li>
-								<li className="flex flex-col gap-2 border border-black border-opacity-20 p-4 rounded-lg">
-									<div><FaPlaystation className="text-3xl" /></div>
-									<p className="font-semibold">Web Development</p>
-									<p className="text-sm">
-										Building fast, responsive and accessible websites and web applications
-									</p>
-								</li>
-								<li className="flex flex-col gap-2 border border-black border-opacity-20 p-4 rounded-lg">
-									<div><FaPlaystation className="text-3xl" /></div>
-									<p className="font-semibold">Web Development</p>
-									<p className="text-sm">
-										Building fast, responsive and accessible websites and web applications
-									</p>
-								</li>
-							</ul>
-						</div>
-				</section>
-				<section className="bg-secondary rounded-top min-h-64 z-index-0 pt-4 -mt-8 flex flex-col items-center justify-center gap-4">
-						<figure className="w-24 h-24 rounded-full overflow-hidden">
-							<img src={CarlosMarquina} alt="Carlos Marquina" />
-						</figure>
+							<time className="bg-neutral-800 text-white text-sm py-1 px-2 rounded items-center mt-2 hidden sm:flex sm:mt-0 sm:self-start">2022 - 2025</time>
+						</li>
 
-						<p className="font-bold text-2xl text-center">Tell me about your next project</p>
+
+
+						<li className="p-3 border border-neutral-300 rounded sm:flex sm:justify-between">
+							<div className="flex flex-col max-w-sm sm:col-span-2">
+								<div className="flex flex-wrap items-center gap-x-4">
+									<h3 className="font-semibold uppercase">Platzi</h3>
+									{/* <ul className="flex gap-2">
+										<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Remoto</li>
+										<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Optional</li>
+									</ul> */}
+								</div>
+								<p>
+									Online professional learning platform.
+								</p>
+								<ul className="flex gap-2">
+									<li className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center"><MdLocationPin />Colombia</li>
+									<time className="bg-neutral-800 text-white text-sm py-1 px-2 rounded flex gap-1 items-center sm:hidden">2022 - 2025</time>
+								</ul>
+							</div>
+							<time className="bg-neutral-800 text-white text-sm py-1 px-2 rounded items-center mt-2 hidden sm:flex sm:mt-0 sm:self-start">2023 - Currently</time>
+						</li>
+					</ul>
 				</section>
+
+				<section>
+					<Subtitle>Technical skills</Subtitle>
+					<div className="flex flex-col gap-12">
+						<Skills />
+						<SkillsReverse />
+					</div>
+
+					{/* <div>
+						<MiniTagWrapper>
+							<MiniTag text="HTML" />
+							<MiniTag text="CSS" />
+							<MiniTag text="JavaScript" />
+							<MiniTag text="React" />
+							<MiniTag text="Node" />
+							<MiniTag text="Express" />
+							<MiniTag text="MongoDB" />
+							<MiniTag text="Git" />
+						</MiniTagWrapper>
+					</div> */}
+				</section>
+				<section>
+
+				</section>
+				<section>
+					<Subtitle>Certifications</Subtitle>
+					<CertificateSwiper />
+				</section>
+
+				<section>
+					<Subtitle>Projects</Subtitle>
+					<Projects />
+				</section>
+
 			</main>
-
 			<Footer />
 		</>
 	)

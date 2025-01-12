@@ -1,0 +1,315 @@
+{
+	"basics": {
+		"name": "Carlos Marquina",
+		"label": "Desarrollador Web",
+		"image": "/src/Assets/Images/CarlosMarquina.jpg",
+		"email": "carlosscripto@gmail.com",
+		"phone": "+573114459491",
+		"url": "https://cxrlos.dev",
+		"seniority": "Trainee",
+		"about": "Apasionado por la tecnología y la programación, disfruto aprendiendo y enfrentando desafíos complejos. Mi objetivo es crecer profesionalmente y contribuir a proyectos innovadores",
+		"location": {
+			"address": "",
+			"postalCode": "",
+			"city": "Bogotá",
+			"countryCode": "CO",
+			"country": "Colombia",
+			"region": "Bogotá DC",
+			"url": "https://www.google.com/maps/place/Bogot%C3%A1/@4.6482784,-74.2726177,11z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9bfd2da6cb29:0x239d635520a33914!8m2!3d4.7109886!4d-74.072092!16zL20vMDFkenlj?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D"
+		},
+		"profiles": [
+			{
+				"network": "Email",
+				"mail": "carlosscripto@gmail.com",
+				"username": "Cxrlos",
+				"url": "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCJqTfVQdqKZvpmlkGrVGGrPlpxLmzltCKDNhtbRMSxFMrHpFDsLwtFZhTQCXZjlMZLqCcwL",
+				"icon": "CiMail"
+			},
+			{
+				"network": "Whatsapp",
+				"username": "Carlos Marquina",
+				"url": "https://api.whatsapp.com/send/?phone=573192947220&text=Hola Carlos, vi tu CV y me gustaría contactarte ✌🏻️",
+				"icon": "FaWhatsapp"
+			},
+			{
+				"network": "Github",
+				"username": "Carlos Marquina",
+				"url": "https://github.com/immordecai97",
+				"icon": "FaGithub"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "Carlos Marquina",
+				"url": "https://www.linkedin.com/in/carlos-marquina-4b84922a1/",
+				"icon": "FaLinkedin"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "La Fábrica S.R.L",
+			"position": "Freelance",
+			"url": "https://company.com",
+			"endDate": "2014-01-01",
+			"summary": "Desarrollando una aplicación para la gestión de inventario, que maneja el ingreso, egreso y despacho de productos manufacturados desde el almacén de la empresa hacia sus sucursales. WMS (Warehouse Management System)",
+			"modality": "Remoto"
+		}
+	],
+	"education": [
+		{
+			"institution": "Universidad Da Vinci Escuela Multimedial",
+			"url": "https://davinci.edu.ar/carreras/desarrollo-web-y-mobile",
+			"area": "Diseño y programación web",
+			"studyType": "Bachelor",
+			"endDate": "2013-01-01",
+			"score": "4.0",
+			"courses": [
+				"DB1101 - Basic SQL"
+			]
+		},
+		{
+			"institution": "Platzi: La escuela de tecnología de latinoamérica",
+			"url": "https://platzi.com/",
+			"area": "Escuela de Desarrollo Web con JavaScript",
+			"studyType": "Bootcamp",
+			"endDate": "",
+			"courses": [
+				"DB1101 - Basic SQL"
+			]
+		}
+	],
+	"certificates": [
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "certificacion-profesional-en-gestion-de-medios-digitales.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-basic-english-course-a1-for-beginners.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-consumo-de-api-rest-con-javascript.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-integracion-de-php-con-html.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-php-arreglos-funciones-estructuras-de-control.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-php-instalación-fundamentos-y-operadores.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-practico-de-api-rest-con-javascript.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-programacion-basica.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-react-vite-tailwindcss.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-react.jpg"
+		},
+		{
+			"name": "Certificacion profesional en gestion de medios digitales",
+			"date": "2023-08-28",
+			"issuer": "Escuela Da Vinci",
+			"url": "diploma-typescript.jpg"
+		}
+	],
+	"stack": [
+		"JavaScript",
+		"React.js",
+		"Node.js",
+		"Express.js",
+		"MongoDB",
+		"API REST",
+		"Git",
+		"Github",
+		"TailwindCSS"
+	],
+	"skills": [
+		{
+			"name": "JavaScript",
+			"level": "Junior"
+		},
+		{
+			"name": "React.js",
+			"level": "Junior"
+		},
+		{
+			"name": "Vue.js",
+			"level": "Junior"
+		},
+		{
+			"name": "Node.js",
+			"level": "Junior"
+		},
+		{
+			"name": "Express.js",
+			"level": "Junior"
+		},
+		{
+			"name": "API REST",
+			"level": "Junior"
+		},
+		{
+			"name": "MongoDB",
+			"level": "Junior"
+		},
+		{
+			"name": "PHP",
+			"level": "Junior"
+		},
+		{
+			"name": "Laravel",
+			"level": "Junior"
+		},
+		{
+			"name": "MySQL",
+			"level": "Junior"
+		},
+		{
+			"name": "HTML5",
+			"level": "Junior"
+		},
+		{
+			"name": "CSS3",
+			"level": "Junior"
+		},
+		{
+			"name": "TailwindCSS",
+			"level": "Junior"
+		},
+		{
+			"name": "Bootstrap",
+			"level": "Junior"
+		},
+		{
+			"name": "Illustrator",
+			"level": "Junior"
+		},
+		{
+			"name": "Git",
+			"level": "Junior"
+		},
+		{
+			"name": "Github",
+			"level": "Junior"
+		}
+	],
+	"languages": [
+		{
+			"language": "Inglés",
+			"fluency": "Básico",
+			"level": "B1"
+		},
+		{
+			"language": "Español",
+			"fluency": "Nativo",
+			"level": "C2"
+		}
+	],
+	"projects": [
+		{
+			"name": "Minitweet",
+			"description": "Minitweet es una aplicación web inspirada en Reddit y Twitter, diseñada para que los usuarios compartan ideas, interactúen a través de comentarios y conversen en tiempo real.",
+			"url": "https://minitweet.netlify.app/",
+			"technologies": [
+				"Vue",
+				"JavaScript",
+				"Firebase",
+				"TailwindCSS",
+				"Vite",
+				"Responsive"
+			]
+		},
+		{
+			"name": "Ajusta tu precio",
+			"description": "\"Ajusta tu precio\" es una innovadora mini aplicación web diseñada para calcular el precio óptimo de un producto, ayudándote a evitar pérdidas al momento de cobrar, ya sea en dólares o bolívares venezolanos.",
+			"url": "https://watch-your-price.vercel.app/",
+			"technologies": [
+				"React",
+				"JavaScript",
+				"TailwindCSS",
+				"Vite",
+				"Responsive"
+			]
+		},
+		{
+			"name": "A Developer Design",
+			"description": "Reto consistía en diseñar una página web ecommerce utilizando solamente HTML, CSS Y JavaScript Vanilla.",
+			"url": "https://immordecai97.github.io/a_developer_desing/",
+			"technologies": [
+				"JavaScript",
+				"CSS",
+				"HTML"
+			]
+		},
+		{
+			"name": "Eurotours",
+			"description": "Reto consistía en diseñar una página web relacionada a un País Europeo, en este caso París, utilizando exclusivamente HTML, CSS Y JavaScript Vanilla.",
+			"url": "https://immordecai97.github.io/eurotours/",
+			"technologies": [
+				"JavaScript",
+				"CSS",
+				"HTML"
+			]
+		},
+		{
+			"name": "Maqoa",
+			"description": "Plataforma marketplace de venta de productos de impresión bajo demanda, aplicación dedicada para diseñadores gráficos y artistas que desean vender sus diseños en productos de calidad en EEUU.",
+			"url": "",
+			"technologies": [
+				"JavaScript",
+				"React",
+				"TalwindCSS",
+				"Node",
+				"Express",
+				"MongoDB"
+			]
+		},
+		{
+			"name": "Flowventory",
+			"description": "Aplicación web para la gestión de inventario para tiendas, controla el ingreso, egreso y despacho de productos desde el almacén de la empresa hacia sus sucursales.",
+			"url": "",
+			"technologies": [
+				"JavaScript",
+				"React",
+				"TalwindCSS",
+				"Node",
+				"Express",
+				"MongoDB"
+			]
+		}
+	]
+}

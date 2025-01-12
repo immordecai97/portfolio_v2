@@ -1,8 +1,6 @@
-
-
-export default function Footer() {
+export function Footer() {
 	return (
-		<footer className="text-xs bg-secondary min-h-10 border-t flex flex-col items-center justify-center gap-4 pt-4 pb-14">
+		<footer className="bg-neutral-800 text-white text-xs bg-secondary min-h-10 border-t flex flex-col items-center justify-center gap-4 py-8 mt-8">
 			<p>
 				&copy; 2024 All rights reserved | Carlos Marquina
 			</p>

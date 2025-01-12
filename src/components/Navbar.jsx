@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import "@/css/Navbar.scss";
 
-export default function Navbar() {
+export function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
 
@@ -21,7 +22,7 @@ export default function Navbar() {
 	return (
 		<nav className={scrolled ? 'scrolled' : ''}>
 			{/* BTNS */}
-			<BtnToCopy addClass={"hidden md:block"} />
+			<BtnToCopy addClass={"hidden md:flex"} />
 			
 			{/* LOGO */}
 			<figure>
@@ -70,7 +71,7 @@ function BtnToCopy({addClass}) {
 	return (
 		<div className={`flex gap-4 ${addClass}`}>
 			<div className="flex items-center gap-2 outline-rounded">
-				<p className="hidden md:block">carlosscripto@gmail.com</p>
+				<p className="hidden md:block text-neutral-800">carlosscripto@gmail.com</p>
 				<button className="btn" >
 					Copy <span className="md:hidden">email</span>
 				</button>

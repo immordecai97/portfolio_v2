@@ -1,0 +1,49 @@
+.slider {
+	width: var(--width);
+	height: var(--size);
+	background-color: var(--perreo);
+	overflow: hidden;
+	mask-image: linear-gradient(90deg, transparent, #000 10% 90%, transparent);
+}
+
+.slider .slider-list {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	padding-left: calc(var(--gap) / 2);
+	padding-right: calc(var(--gap) / 2);
+}
+
+.slider .slider-list .slider-item {
+	position: absolute;
+	height: var(--size);
+	min-width: var(--size);
+	min-height: var(--size);
+	margin-right: calc(var(--gap) / 2);
+	margin-left: calc(var(--gap) / 2);
+	animation: scroll var(--velocity) linear infinite;
+
+	// timePerItem: Tiempo que tarda cada elemento en iniciar su animación. ---------------> (velocity / quantity)
+	// delayBeforeStart: Tiempo de retraso antes de que el elemento comience su animación.--> (timePerItem * (position - 1))
+	// finalDelay: Tiempo total de retraso ajustado para la animación infinita. ------------> (delayBeforeStart - velocity)
+	animation-delay: calc((var(--velocity) / var(--quantity)) * (var(--position) - 1) - var(--velocity));
+}
+
+.slider .slider-list .slider-item .slider-img {
+	width: 100%;
+	height: 100%;
+	min-height: var(--size);
+	min-width: var(--size);
+	object-fit: contain;
+}
+
+@keyframes scroll {
+	0% {
+		left: calc((var(--size) + var(--gap)) * -1);
+	}
+
+	100% {
+		left: 100%;
+	}
+}

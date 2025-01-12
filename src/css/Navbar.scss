@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// ---------------------------------------- NAVBAR COMPONENT ---------------------------------------->
+nav {
+	@apply relative w-full flex items-center justify-between p-4 bg-tertiary min-h-20 max-h-20;
+	z-index: 1000;
+
+	&.scrolled {
+		@apply sticky top-0 left-0;
+		box-shadow: 0px -9px 12px 6px #000000a1;
+	}
+
+	.btnClose,
+	.btnOpen {
+		@apply text-3xl;
+
+		svg:focus {
+			outline: none;
+		}
+	}
+
+	.menu-slide {
+		@apply w-full fixed top-[79px] left-0 bottom-0 flex flex-col items-center justify-center gap-8 bg-tertiary transition-transform duration-300 ease-in-out;
+		transform: translateX(-100%);
+
+		&.open {
+			transform: translateX(0);
+		}
+
+		.navlist {
+			@apply flex flex-col items-center justify-center gap-6;
+		}
+	}
+}
